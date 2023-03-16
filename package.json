@@ -3,15 +3,11 @@
   "version": "3.6.2",
   "description": "state management for Vue.js",
   "main": "dist/vuex.common.js",
-  "exports": {
-    ".": {
-      "module": "./dist/vuex.esm.js",
-      "require": "./dist/vuex.common.js",
-      "import": "./dist/vuex.mjs"
-    },
-    "./*": "./*",
-    "./": "./"
-  },
+   "exports": {
+    "./*": "./dist/vuex.common.js",
+    "./store/*": "./dist/vuex.esm.browser.js",
+    "./module/*": "./dist/vuex.esm.browser.js"
+  }
   "module": "dist/vuex.esm.js",
   "unpkg": "dist/vuex.js",
   "jsdelivr": "dist/vuex.js",
