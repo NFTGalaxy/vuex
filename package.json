@@ -7,7 +7,7 @@
     "./*": "./dist/vuex.common.js",
     "./store/*": "./dist/vuex.esm.browser.js",
     "./module/*": "./dist/vuex.esm.browser.js"
-  }
+  },
   "module": "dist/vuex.esm.js",
   "unpkg": "dist/vuex.js",
   "jsdelivr": "dist/vuex.js",
