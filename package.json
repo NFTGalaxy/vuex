@@ -4,9 +4,12 @@
   "description": "state management for Vue.js",
   "main": "dist/vuex.common.js",
    "exports": {
-    "./*": "./dist/vuex.common.js",
-    "./store/*": "./dist/vuex.esm.browser.js",
-    "./module/*": "./dist/vuex.esm.browser.js"
+   ".": {
+      "module": "./dist/vuex.esm.js",
+      "require": "./dist/vuex.common.js",
+      "import": "./dist/vuex.mjs"
+    },
+    "./*": "./*"
   },
   "module": "dist/vuex.esm.js",
   "unpkg": "dist/vuex.js",
